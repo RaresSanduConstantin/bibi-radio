@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background: #f4f4f4; */
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+
+  margin: auto;
+}
+
+.radioControls {
+  width: 100%;
+  /* background: red !important; */
+}
+
+.radioSource {
+  color: red !important;
+}
+
+source {
+  background: red;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 350px;
+  }
+}
