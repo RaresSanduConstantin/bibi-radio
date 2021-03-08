@@ -1,23 +1,19 @@
-import React from "react";
-import stations from "../data/stations";
+import React from 'react';
+import stations from '../data/stations';
 
 const Stations = () => {
-  return (
-    <>
-      {stations.map((station) => (
-        <>
-          <h2>{station.name}</h2>
-          <audio id="player" controls className="radioControls">
-            <source
-              src={station.href}
-              type="audio/ogg"
-              className="radioSource"
-            ></source>
-          </audio>
-        </>
-      ))}
-    </>
-  );
+	return (
+		<div>
+			{stations.map((station) => (
+				<div className="radioContainer">
+					<h2 className="radioTitle">{station.name}</h2>
+					<audio id="player" controls className="radioControls">
+						<source src={station.href} type="audio/ogg" className="radioSource" />
+					</audio>
+				</div>
+			))}
+		</div>
+	);
 };
 
 export default Stations;
