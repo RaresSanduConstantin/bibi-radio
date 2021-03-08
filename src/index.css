@@ -16,14 +16,36 @@ code {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* background: #f4f4f4; */
   color: #333;
 }
 
-.container {
-  max-width: 500px;
+.windowContainer{
+  width: 100vw;
+  height: 100vh;
+  background: #a8dadc;
+}
 
+.title{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.containerRad {
+  max-width: 500px;
   margin: auto;
+}
+
+.radioContainer{
+  background-color: #e63946;
+  /* border: 1px solid #1d3557; */
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 50px
+}
+
+.radioTitle{
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .radioControls {
@@ -31,13 +53,8 @@ code {
   /* background: red !important; */
 }
 
-.radioSource {
-  color: red !important;
-}
 
-source {
-  background: red;
-}
+
 
 @media screen and (max-width: 1000px) {
   .container {
