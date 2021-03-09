@@ -19,11 +19,48 @@ code {
   color: #333;
 }
 
-.windowContainer{
-  width: 100vw;
-  height: 100vh;
-  background: #a8dadc;
+body{
+    background: #a8dadc;
+
 }
+
+.windowContainer{
+  width: 100%;
+  height: 100vh;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    /* padding-top: 40px; */
+  }
+
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00b4cc;
+    margin-top: 70px;
+    padding: 20px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+    color: #9dbfaf;
+  }
+
+  .searchTerm:focus {
+    color: #00b4cc;
+  }
+
+  .wrap {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 
 .title{
   padding-top: 20px;
@@ -37,15 +74,24 @@ code {
 
 .radioContainer{
   background-color: #e63946;
+  display: flex;
+  flex-direction: column;
   /* border: 1px solid #1d3557; */
   border-radius: 30px;
   padding: 20px;
-  margin-top: 50px
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .radioTitle{
   text-align: center;
   margin-bottom: 25px;
+  color:#f4f4f4
+}
+
+.fa-heart{
+    width: 500px;
+
 }
 
 .radioControls {
@@ -53,6 +99,23 @@ code {
   /* background: red !important; */
 }
 
+.fa-heart{
+  position: absolute;
+    left: 90%;
+    top:10%;
+
+    display: inline;
+    width: 100px;
+}
+
+.heartBg{
+    color:#f4f4f4;
+}
+
+.heartBgFav{
+    color:#00b4cc
+
+}
 
 
 
