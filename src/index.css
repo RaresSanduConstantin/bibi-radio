@@ -19,10 +19,14 @@ code {
   color: #333;
 }
 
+body{
+    background: #a8dadc;
+
+}
+
 .windowContainer{
   width: 100vw;
   height: 100vh;
-  background: #a8dadc;
 }
 
 .title{
@@ -53,6 +57,36 @@ code {
   /* background: red !important; */
 }
 
+
+.search {
+    width: auto;
+    position: relative;
+    display: flex;
+    padding-top: 40px;
+  }
+
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00b4cc;
+
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    color: #9dbfaf;
+  }
+
+  .searchTerm:focus {
+    color: #00b4cc;
+  }
+
+  .wrap {
+    width: 30%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 
 
