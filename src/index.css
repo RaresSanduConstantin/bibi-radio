@@ -47,6 +47,7 @@ body{
     font-size: 1rem;
     outline: none;
     color: #9dbfaf;
+    margin-bottom: -30px;
   }
 
   .searchTerm:focus {
@@ -73,20 +74,29 @@ body{
 }
 
 .radioContainer{
-  background-color: #e63946;
-  display: flex;
-  flex-direction: column;
-  /* border: 1px solid #1d3557; */
-  border-radius: 30px;
-  padding: 20px;
-  margin-bottom: 20px;
-  position: relative;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin-top: 100px;
+
+
+    z-index: 10;
+
 }
 
+
+
 .radioTitle{
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translateX(-50%);
   text-align: center;
   margin-bottom: 25px;
-  color:#f4f4f4
+  /* color:black; */
 }
 
 .fa-heart{
@@ -101,8 +111,8 @@ body{
 
 .fa-heart{
   position: absolute;
-    left: 90%;
-    top:10%;
+    left: 80%;
+    top:-40%;
 
     display: inline;
     width: 100px;
@@ -113,10 +123,45 @@ body{
 }
 
 .heartBgFav{
-    color:#00b4cc
+    color:#e63946
 
 }
 
+
+.img-container {
+    position: absolute;
+    left:-5%;
+    z-index: 2;
+    position: relative;
+    width: 110px;
+  }
+
+
+  .img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .radioContainer .img-container img:hover {
+    animation-play-state: running;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 
 @media screen and (max-width: 1000px) {
@@ -128,5 +173,9 @@ body{
 @media screen and (max-width: 600px) {
   .container {
     max-width: 350px;
+  }
+
+  .containerRad{
+      width: 90vw;
   }
 }

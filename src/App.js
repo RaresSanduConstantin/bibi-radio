@@ -28,6 +28,7 @@ const App = () => {
 				<SearchBox placeholder="Search" handleChange={handleChange} />
 				{radios.map((item) => <Stations item={item} />)}
 			</div>
+			<br />
 		</div>
 	);
 };
