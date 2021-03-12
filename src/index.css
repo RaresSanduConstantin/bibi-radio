@@ -81,10 +81,7 @@ body{
     padding: 20px 30px;
     position: relative;
     margin-top: 100px;
-
-
     z-index: 10;
-
 }
 
 
@@ -97,6 +94,7 @@ body{
   text-align: center;
   margin-bottom: 25px;
   /* color:black; */
+  z-index: 10;
 }
 
 .fa-heart{
@@ -106,7 +104,6 @@ body{
 
 .radioControls {
   width: 100%;
-  /* background: red !important; */
 }
 
 .fa-heart{
@@ -149,7 +146,7 @@ body{
     animation-play-state: paused;
   }
 
-  .radioContainer .img-container img:hover {
+  .img-container.play img {
     animation-play-state: running;
   }
 
@@ -163,6 +160,26 @@ body{
     }
   }
 
+  .action-btn {
+    background-color: #457b9d;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 0 auto;
+    width: 40%;
+    cursor: pointer;
+}
+
+.p{
+     color: #fff !important;
+  }
+
+  .action-btn:focus {
+    outline: 0;
+  }
+
 
 @media screen and (max-width: 1000px) {
   .container {
@@ -171,6 +188,9 @@ body{
 }
 
 @media screen and (max-width: 600px) {
+    .radioContainer{
+        font-size: 12px;
+    }
   .container {
     max-width: 350px;
   }
